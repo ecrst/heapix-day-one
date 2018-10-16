@@ -1,0 +1,40 @@
+.contact {
+  width: 100%;
+  padding: 10rem 0;
+  text-align: center;
+
+  &__inner {
+    width: 102.4rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__title {
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  &__subtitle {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+
+  &__welcome-text {
+    font-size: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__inner > * {
+    flex: 1 1 50%;
+    padding: 0 5rem;
+  }
+
+}

@@ -1,0 +1,41 @@
+.gallery {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  &__actual {
+    height: 100%;
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__placeholder {
+    height: 100%;
+    width: calc((100% - 60rem) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  &__placeholder--left {
+    justify-content: flex-end;
+  }
+  &__placeholder--right {
+    justify-content: flex-start;
+  }
+
+  &__item {
+    width: 10rem;
+    height: 10rem;
+    border: $border;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 2s ease-in;
+  }
+}

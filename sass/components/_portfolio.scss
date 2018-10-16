@@ -1,0 +1,52 @@
+.portfolio {
+  width: 100%;
+  background-color: $color-grey;
+  color: $color-white;
+
+  &__title {
+    padding-top: 1.5rem;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 60rem;
+    z-index: 200;
+
+  }
+
+  &__item {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid $color-white;
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    background-color: $color-grey;
+
+    transition: transform .2s ease-out;
+  }
+
+  &__item:hover {
+    transform: translate3d(0, -1rem, 0);
+  }
+
+
+  &__view {
+    display: none;
+  }
+}

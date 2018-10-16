@@ -1,0 +1,19 @@
+.mid-title {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 10rem;
+
+  &__lit {
+    font-weight: 600;
+    padding: 0 1rem;
+    position: relative;
+    text-shadow: 1rem 1rem 0  rgba(0, 0, 0, .3);
+    top: -.25rem;
+    left: -.25rem;
+  }
+}
